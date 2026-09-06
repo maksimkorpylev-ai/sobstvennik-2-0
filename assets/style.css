@@ -126,7 +126,7 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
   .hero__grid { grid-template-columns: 1fr; }
   /* мобайл: чипы над фото, карточка под фото — ничего не перекрывает лицо */
   .hero__media { height: auto; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-start; align-items: stretch; }
-  .hero__photo { order: 2; width: auto; max-width: 86%; margin: 0 auto; height: auto; max-height: 440px;
+  .hero__photo { order: 2; width: auto; max-width: 86%; margin: 0 auto; height: auto; max-height: 440px; filter: none;
     -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 98%); mask-image: linear-gradient(to bottom, #000 70%, transparent 98%); }
   .hero__media::before { inset: 20% 10% 0; }
   .chip { position: static; flex: 1 1 auto; }
