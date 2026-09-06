@@ -204,7 +204,10 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .results { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; position: relative; z-index: 2; }
 .results__side h2 { margin-bottom: 30px; }
 .results__pack { padding: 28px; }
-.results__pack .check li { margin-bottom: 10px; }
+.results__pack .check li { margin-bottom: 14px; font-size: 1.12rem; line-height: 1.45; padding-left: 28px; }
+.results__pack .check li::before { top: 9px; left: 2px; width: 10px; height: 10px; background: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, .35), 0 0 12px rgba(59, 130, 246, 1), 0 0 26px rgba(37, 99, 235, .7); }
+.results__pack .check li::after { display: none; }
 .results__list { display: grid; gap: 12px; }
 .row { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: 22px; padding: 18px 24px; border-radius: 20px; border: 1px solid var(--line); background: rgba(6, 15, 36, .5); transition: border-color .3s; }
 .row:hover { border-color: rgba(29, 78, 216, .6); }
