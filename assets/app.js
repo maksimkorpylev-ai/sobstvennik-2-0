@@ -39,7 +39,7 @@
       const priceHtml = now
         ? `<div class="tariff__price"><span class="tariff__price-now">${now}</span>${old ? `<span class="tariff__price-old">${old}</span>` : ""}</div>`
         : `<div class="tariff__price"><span class="tariff__price-tbd">Стоимость уточняется</span></div>`;
-      const btnText = t.requestOnly ? "Оставить заявку" : "Занять место";
+      const btnText = "Оплатить";
       return `
         <div class="glass tariff ${t.featured ? "glass--blue tariff--featured" : ""}" data-tariff-id="${t.id}">
           ${t.featured ? `<div class="tariff__badge">Рекомендуем</div>` : ""}
