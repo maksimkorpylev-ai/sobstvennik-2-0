@@ -177,7 +177,7 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .row { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: 22px; padding: 18px 24px; border-radius: 20px; border: 1px solid var(--line); background: rgba(6, 15, 36, .5); transition: border-color .3s; }
 .row:hover { border-color: rgba(29, 78, 216, .6); }
 .row__num { font-size: 2.2rem; font-weight: 800; letter-spacing: -.03em; color: var(--primary-2); }
-.row__text { color: rgba(248, 250, 252, .88); font-weight: 300; }
+.row__text { color: rgba(248, 250, 252, .88); font-weight: 300; font-size: 1.12rem; line-height: 1.45; }
 @media (max-width: 900px) { .results { grid-template-columns: 1fr; gap: 32px; } .row { grid-template-columns: 80px 1fr; } .row__num { font-size: 1.7rem; } }
 
 /* PROGRAM */
