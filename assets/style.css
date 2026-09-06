@@ -38,8 +38,8 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .lead { font-size: 1.15rem; font-weight: 300; color: rgba(248, 250, 252, 0.82); max-width: 560px; line-height: 1.6; }
 .lead--center { margin: 0 auto; text-align: center; }
 .eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--primary-2); margin-bottom: 14px; }
-.eyebrow--lg { font-size: 0.92rem; }
 .eyebrow--xl { font-size: calc(0.72rem + 10px); }
+@media (max-width: 900px) { .eyebrow--xl { font-size: calc(0.72rem + 4px); letter-spacing: .18em; } }
 .pill {
   display: inline-block; padding: 8px 16px; border-radius: 999px; font-size: 0.72rem; font-weight: 600;
   letter-spacing: 0.15em; text-transform: uppercase; color: rgba(248, 250, 252, 0.8); margin-bottom: 20px;
@@ -275,7 +275,6 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .speaker__photo img { border-radius: 40px; width: 100%; max-height: 620px; object-fit: cover; object-position: top;
   -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 100%); mask-image: linear-gradient(to bottom, #000 80%, transparent 100%); }
 .speaker__text .lead { margin-bottom: 24px; }
-.speaker__label { font-size: .72rem; font-weight: 700; letter-spacing: .25em; text-transform: uppercase; color: var(--primary-2); margin-bottom: 14px; }
 .speaker__contacts { display: flex; gap: 20px; align-items: center; margin-top: 30px; flex-wrap: wrap; }
 .speaker__phone { font-weight: 700; color: var(--primary-2); }
 @media (max-width: 900px) { .speaker { grid-template-columns: 1fr; gap: 32px; } }
