@@ -252,7 +252,8 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .module__result::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
   background: radial-gradient(circle at 0% 50%, rgba(147, 197, 253, .25), transparent 55%); }
 .module__result b { color: #fff; font-weight: 800; text-shadow: 0 0 12px rgba(147, 197, 253, .8); }
-.program__after { margin-top: 36px; text-align: center; color: var(--muted); font-weight: 300; max-width: 720px; margin-left: auto; margin-right: auto; }
+.program__after { margin-top: 44px; text-align: center; color: #fff; font-weight: 600; font-size: clamp(1.15rem, 1.8vw, 1.5rem); line-height: 1.4; max-width: 900px; margin-left: auto; margin-right: auto;
+  text-shadow: 0 0 16px rgba(147, 197, 253, .45), 0 0 36px rgba(59, 130, 246, .3); }
 @media (max-width: 900px) {
   .module summary { grid-template-columns: 44px 1fr 34px; padding: 20px; gap: 12px; }
   .module__idx { font-size: 1.4rem; }
