@@ -113,47 +113,6 @@
     closeModal();
   });
 
-  /* ---- Переключатель версий (html.alt / html.v3) ---- */
-  const html = document.documentElement;
-  const REVEAL_SEL = ".glass, .row, .fact, .band__box, .final, .section__head, .hero__text, .speaker__text, .speaker__photo, .results__side";
-  let io = null;
-
-  function prepReveal() {
-    const els = $$(REVEAL_SEL).filter((el) => !el.closest(".modal"));
-    els.forEach((el, i) => {
-      el.classList.add("rv");
-      const sib = el.parentElement ? Array.from(el.parentElement.children).indexOf(el) : 0;
-      el.style.setProperty("--d", (Math.min(sib, 6) * 0.09).toFixed(2) + "s");
-      if (el.classList.contains("glass") && !$(".sweep-bar", el)) {
-        const bar = document.createElement("i"); bar.className = "sweep-bar"; el.appendChild(bar);
-      }
-    });
-    if (io) io.disconnect();
-    io = new IntersectionObserver((entries) => {
-      entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-    els.forEach((el) => { el.classList.remove("in"); io.observe(el); });
-  }
-  function clearReveal() {
-    if (io) io.disconnect();
-    $$(".rv").forEach((el) => { el.classList.remove("rv", "in"); el.style.removeProperty("--d"); });
-  }
-  /* версии: 1 — базовая; 2 — альт (оранжевая); 3 — альт в синей палитре */
-  function applyVersion(v, animate) {
-    v = String(v);
-    if (animate) { html.classList.add("theming"); setTimeout(() => html.classList.remove("theming"), 700); }
-    const alt = v === "2" || v === "3";
-    html.classList.toggle("alt", alt);
-    html.classList.toggle("v3", v === "3");
-    $$("[data-vsw] .vsw__b").forEach((b) => b.setAttribute("aria-pressed", b.dataset.v === v ? "true" : "false"));
-    localStorage.setItem("siteVersion", v);
-    if (alt) prepReveal(); else clearReveal();
-  }
-  const mq = $("[data-marquee]");
-  if (mq) mq.innerHTML += mq.innerHTML; // бесшовный цикл
-  $$("[data-vsw] .vsw__b").forEach((b) => b.addEventListener("click", () => applyVersion(b.dataset.v, true)));
-  applyVersion(html.classList.contains("v3") ? "3" : html.classList.contains("alt") ? "2" : "1", false);
-
   /* ---- Cookie ---- */
   const cookie = $("[data-cookie]");
   if (cookie && !localStorage.getItem("cookie_ok")) {
