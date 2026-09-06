@@ -49,7 +49,7 @@
           ${priceHtml}
           <div class="tariff__seats">${t.seats || ""}</div>
           ${t.featuresLead ? `<div class="tariff__lead">${t.featuresLead}</div>` : ""}
-          <ul class="check">${(t.features || []).map((f) => `<li>${f}</li>`).join("")}</ul>
+          <ul class="check check--dots">${(t.features || []).map((f) => `<li>${f}</li>`).join("")}</ul>
           <button class="btn ${t.featured ? "btn--white" : "btn--primary"} btn--full" data-buy="${t.id}">${btnText}</button>
         </div>`;
     }).join("");

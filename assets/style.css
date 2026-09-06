@@ -277,17 +277,17 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .tariff { padding: 36px; display: flex; flex-direction: column; position: relative; }
 .tariff--featured { border-color: rgba(29, 78, 216, .7); box-shadow: 0 0 60px rgba(29, 78, 216, .25); }
 .tariff__badge { position: absolute; top: -14px; left: 32px; background: var(--primary); color: #fff; padding: 6px 14px; border-radius: 999px; font-size: .62rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
-.tariff__tag { font-size: .65rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-.tariff__name { font-size: 1.7rem; font-weight: 800; letter-spacing: -.02em; margin-bottom: 8px; }
-.tariff__for { color: var(--muted); font-weight: 300; font-size: .95rem; margin-bottom: 24px; min-height: 44px; }
+.tariff__tag { font-size: .85rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.tariff__name { font-size: 2.05rem; font-weight: 800; letter-spacing: -.02em; margin-bottom: 10px; white-space: nowrap; }
+.tariff__for { color: var(--muted); font-weight: 300; font-size: 1.15rem; line-height: 1.45; margin-bottom: 24px; min-height: 52px; }
 .tariff__price { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
-.tariff__price-now { font-size: 2rem; font-weight: 800; letter-spacing: -.03em; }
-.tariff__price-old { font-size: 1.1rem; color: var(--muted); text-decoration: line-through; }
-.tariff__price-tbd { font-size: 1.15rem; font-weight: 700; color: rgba(248, 250, 252, .75); }
-.tariff__seats { font-size: .78rem; color: var(--primary-2); font-weight: 700; margin-bottom: 20px; min-height: 18px; }
-.tariff__lead { font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin: 8px 0 12px; }
-.tariff .check { flex: 1; margin-bottom: 26px; }
-.tariff .check li { font-size: .95rem; }
+.tariff__price-now { font-size: 2.6rem; font-weight: 800; letter-spacing: -.03em; }
+.tariff__price-old { font-size: 1.3rem; color: var(--muted); text-decoration: line-through; }
+.tariff__price-tbd { font-size: 1.45rem; font-weight: 700; color: rgba(248, 250, 252, .8); }
+.tariff__seats { font-size: .95rem; color: var(--primary-2); font-weight: 700; margin-bottom: 20px; min-height: 18px; }
+.tariff__lead { font-size: .9rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin: 8px 0 14px; }
+.tariff .check { flex: 1; margin-bottom: 28px; }
+.tariff .check li { font-size: 1.2rem; line-height: 1.45; margin-bottom: 14px; }
 .tariffs__note { margin-top: 28px; text-align: center; color: var(--muted); font-size: .85rem; }
 .tariffs__note a { color: var(--primary-2); text-decoration: underline; }
 
