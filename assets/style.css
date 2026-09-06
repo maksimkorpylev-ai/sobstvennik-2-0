@@ -167,6 +167,12 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .tile--cta .tile__icon { color: #fff; background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .3); }
 #why .tile { position: relative; padding-right: 100px; }
 #why .tile__icon { position: absolute; right: 36px; top: 26px; margin: 0; }
+#steps .tile { position: relative; padding-right: 100px; }
+#steps .tile__icon { position: absolute; right: 36px; top: 26px; margin: 0; }
+#steps .tile__num { font-size: 1.6rem; border-left: 0; padding-left: 0; margin-bottom: 12px; letter-spacing: -.03em; line-height: 1;
+  background: linear-gradient(180deg, #ffffff 0%, #93c5fd 45%, var(--primary-2) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 10px rgba(59, 130, 246, .7)) drop-shadow(0 0 22px rgba(37, 99, 235, .4)); }
+#steps .tile p { font-size: 1.16rem; }
 
 /* Timeline (tasks) */
 .timeline { position: relative; display: grid; gap: 8px; padding-left: 8px; }
