@@ -165,8 +165,6 @@ h3 { font-size: 1.2rem; margin-bottom: 10px; }
   background: rgba(59, 130, 246, .14); border: 1px solid rgba(59, 130, 246, .35); box-shadow: 0 0 22px rgba(37, 99, 235, .25); }
 .tile__icon svg { width: 24px; height: 24px; }
 .tile--cta .tile__icon { color: #fff; background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .3); }
-#why .tile { position: relative; padding-right: 100px; }
-#why .tile__icon { position: absolute; right: 36px; top: 26px; margin: 0; }
 #steps .tile { position: relative; padding-right: 100px; }
 #steps .tile__icon { position: absolute; right: 36px; top: 26px; margin: 0; }
 #steps .tile__num { font-size: 1.6rem; border-left: 0; padding-left: 0; margin-bottom: 12px; letter-spacing: -.03em; line-height: 1;
